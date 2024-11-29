@@ -1,0 +1,89 @@
+<view class="cotainer">
+  <view class="top">
+    <view class="logo">
+      <image src="../../asset/imgs/logo.png" mode="" />
+    </view>
+  </view>
+  <view class="middle">
+    <view class="tools">
+      <view class="check-schedule">
+        <image
+          class="../../asset/imgs/course.png"
+          src=""
+          mode="aspectFit"
+          lazy-load="true"
+        />
+        <text>查课表</text>
+      </view>
+      <view class="check-schedule">
+        <image
+          class="../../asset/imgs/course.png"
+          src=""
+          mode="aspectFit"
+          lazy-load="true"
+        />
+        <text>查成绩</text>
+      </view>
+      <view class="check-schedule">
+        <image
+          class="../../asset/imgs/course.png"
+          src=""
+          mode="aspectFit"
+          lazy-load="true"
+        />
+        <text>查考勤</text>
+      </view>
+      <view class="check-schedule">
+        <image
+          class="../../asset/imgs/course.png"
+          src=""
+          mode="aspectFit"
+          lazy-load="true"
+        />
+        <text>校历</text>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="content">
+      <view class="subTitle">
+        <text class="today-class">今日课程</text>
+        <text class="time">15周周一</text>
+      </view>
+      <view class="classes">
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+        <view class="class-content">
+          <text class="now">1-2 网络工程</text>
+          <text class="place">博雅楼503</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
