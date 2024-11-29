@@ -8,8 +8,7 @@
     <view class="tools">
       <view class="check-schedule">
         <image
-          class="../../asset/imgs/course.png"
-          src=""
+          src="../../asset/imgs/course.png"
           mode="aspectFit"
           lazy-load="true"
         />
@@ -17,8 +16,7 @@
       </view>
       <view class="check-schedule">
         <image
-          class="../../asset/imgs/course.png"
-          src=""
+          src="../../asset/imgs/score.png"
           mode="aspectFit"
           lazy-load="true"
         />
@@ -26,8 +24,7 @@
       </view>
       <view class="check-schedule">
         <image
-          class="../../asset/imgs/course.png"
-          src=""
+          src="../../asset/imgs/attendance.png"
           mode="aspectFit"
           lazy-load="true"
         />
@@ -35,8 +32,7 @@
       </view>
       <view class="check-schedule">
         <image
-          class="../../asset/imgs/course.png"
-          src=""
+          src="../../asset/imgs/calendar.png"
           mode="aspectFit"
           lazy-load="true"
         />
@@ -50,7 +46,7 @@
         <text class="today-class">今日课程</text>
         <text class="time">15周周一</text>
       </view>
-      <view class="classes">
+      <view class="classes" wx:if="{{classList.length}}">
         <view class="class-content">
           <text class="now">1-2 网络工程</text>
           <text class="place">博雅楼503</text>
@@ -83,6 +79,10 @@
           <text class="now">1-2 网络工程</text>
           <text class="place">博雅楼503</text>
         </view>
+      </view>
+      <view class="empty" wx:else>
+        <image src="../../asset/imgs/empty.png" mode="aspectFit" />
+        <text>今天没有课哦，快去充实一下自己吧！</text>
       </view>
     </view>
   </view>

@@ -1,0 +1,24 @@
+<view class="cotainer">
+  <view class="top">
+    <view class="logo">
+      <image src="../../asset/imgs/logo.png" mode="" />
+    </view>
+  </view>
+  <view class="content">
+    <view class="user">
+      <image src="../../asset/imgs/user.png" mode="aspectFit" />
+      <input type="text" placeholder="请输入学号" />
+    </view>
+    <view class="password">
+      <image src="../../asset/imgs/password.png" mode="aspectFit" />
+      <input type="password" placeholder="请输入密码" />
+    </view>
+    <view class="check">
+      <checkbox value="{{isChecked}}" />
+      <text>记住账号密码(仅本地存储)</text>
+    </view>
+  </view>
+  <view class="footer">
+    <text>登录</text>
+  </view>
+</view>

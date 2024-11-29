@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "navigationBarHidden": true,
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index"
+  }
 }
