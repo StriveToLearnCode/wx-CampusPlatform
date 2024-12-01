@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/course/course",
     "pages/mine/mine",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/score/score"
   ],
   "window": {
     "navigationBarTextStyle": "black",

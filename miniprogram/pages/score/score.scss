@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 12px;
+  background-color: #fcf1fa;
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20rpx;
+    .left {
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      view {
+        padding: 8px;
+        background-color: #ebeaeb;
+        border-radius: 10px;
+      }
+      view:first-child {
+        background-color: #e065e0;
+        margin-right: 5px;
+        color: #fff;
+      }
+    }
+    .middle {
+      .van-dropdown-menu {
+        border-radius: 10px;
+
+        .van-dropdown-item {
+          font-size: 14px; /* 设置下拉项的字体大小 */
+        }
+      }
+    }
+    .right {
+      border-radius: 10px;
+      .refresh {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #fff;
+        image {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .bottom {
+    font-size: 16px;
+    background-color: #fafafa;
+    width: 325px;
+    border-radius: 10px;
+    margin-left: 20px;
+    .title {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+      padding: 5px;
+      .list {
+        .item {
+          display: flex;
+          justify-content: space-between;
+          padding: 8px;
+          border-bottom: 1px solid #ebeaeb;
+          .left {
+          }
+          .right {
+          }
+        }
+      }
+    }
+  }
+}

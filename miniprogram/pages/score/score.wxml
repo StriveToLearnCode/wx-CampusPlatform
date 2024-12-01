@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="top">
+    <view class="left">
+      <view>有效成绩</view>
+      <view>原始成绩</view>
+    </view>
+    <view class="middle">
+      <van-dropdown-menu>
+        <van-dropdown-item value="{{ value }}" options="{{ option }}" />
+      </van-dropdown-menu>
+    </view>
+    <view class="right">
+      <view class="refresh">
+        <image src="../../asset/imgs/refresh.png" mode="aspectFit" lazy-load="true" />
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="title">2021-2022学年 第一学期</view>
+    <view class="content">
+      <view class="list">
+        <view class="item">
+          <view class="left">
+            <view>语文</view>
+          </view>
+          <view class="right">
+            <view>90</view>
+          </view>
+        </view>
+        <view class="item">
+          <view class="left">
+            <view>语文</view>
+          </view>
+          <view class="right">
+            <view>90</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -14,14 +14,16 @@
         />
         <text>查课表</text>
       </view>
-      <view class="check-schedule">
-        <image
-          src="../../asset/imgs/score.png"
-          mode="aspectFit"
-          lazy-load="true"
-        />
-        <text>查成绩</text>
-      </view>
+      <navigator url="/pages/score/score">
+        <view class="check-schedule">
+          <image
+            src="../../asset/imgs/score.png"
+            mode="aspectFit"
+            lazy-load="true"
+          />
+          <text>查成绩</text>
+        </view>
+      </navigator>
       <view class="check-schedule">
         <image
           src="../../asset/imgs/attendance.png"

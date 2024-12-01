@@ -1,5 +1,5 @@
 {
-  "navigationBarHidden": true,
+    "navigationStyle": "custom",
   "usingComponents": {
     "van-popup": "@vant/weapp/popup/index"
   }

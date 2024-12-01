@@ -8,6 +8,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "查成绩页面",
+          "pathName": "pages/score/score",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "课表页面",
           "pathName": "pages/course/course",
           "query": "",
