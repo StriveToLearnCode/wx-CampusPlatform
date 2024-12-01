@@ -6,14 +6,16 @@
   </view>
   <view class="middle">
     <view class="tools">
-      <view class="check-schedule">
-        <image
-          src="../../asset/imgs/course.png"
-          mode="aspectFit"
-          lazy-load="true"
-        />
-        <text>查课表</text>
-      </view>
+      <navigator url="/pages/course/course" open-type="switchTab">
+        <view class="check-schedule">
+          <image
+            src="../../asset/imgs/course.png"
+            mode="aspectFit"
+            lazy-load="true"
+          />
+          <text>查课表</text>
+        </view>
+      </navigator>
       <navigator url="/pages/score/score">
         <view class="check-schedule">
           <image
@@ -32,14 +34,16 @@
         />
         <text>查考勤</text>
       </view>
-      <view class="check-schedule">
-        <image
-          src="../../asset/imgs/calendar.png"
-          mode="aspectFit"
-          lazy-load="true"
-        />
-        <text>校历</text>
-      </view>
+      <navigator url="/pages/calendar/calendar">
+        <view class="check-schedule">
+          <image
+            src="../../asset/imgs/calendar.png"
+            mode="aspectFit"
+            lazy-load="true"
+          />
+          <text>校历</text>
+        </view>
+      </navigator>
     </view>
   </view>
   <view class="footer">

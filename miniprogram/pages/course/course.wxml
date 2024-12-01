@@ -1,2 +1,102 @@
-<!--pages/course/course.wxml-->
-<text>pages/course/course.wxml</text>
+<view class="container">
+  <view class="top">
+    <view class="refresh">
+      <image src="../../asset/imgs/refresh.png" mode="aspectFit" lazy-load="true" />
+    </view>
+    <van-dropdown-menu>
+      <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+    </van-dropdown-menu>
+  </view>
+  <view class="middle">
+    <view class="month">
+      <text>05月</text>
+    </view>
+    <view class="day">
+      <view class="day-item">
+        <text>周一</text>
+        <text>29日</text>
+      </view>
+      <view class="day-item">
+        <text>周一</text>
+        <text>29日</text>
+      </view>
+      <view class="day-item">
+        <text>周一</text>
+        <text>29日</text>
+      </view>
+      <view class="day-item">
+        <text>周一</text>
+        <text>29日</text>
+      </view>
+      <view class="day-item">
+        <text>周一</text>
+        <text>29日</text>
+      </view>
+      <view class="day-item">
+        <text>周一</text>
+        <text>29日</text>
+      </view>
+      <view class="day-item">
+        <text>周一</text>
+        <text>29日</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="left">
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+      <view>
+        <text>01</text>
+      </view>
+    </view>
+    <view class="right">
+      <view class="item">
+        <text>11111111111111111s</text>
+      </view>
+      <view class="item">
+        <text>11111111111111111s</text>
+      </view>
+      <view class="item">
+        <text>11111111111111111s</text>
+      </view>
+      <view class="item">
+        <text>11111111111111111s</text>
+      </view>
+      <view class="item">
+        <text>11111111111111111s</text>
+      </view>
+      <view class="item">
+        <text>11111111111111111s</text>
+      </view>
+      <view class="item">
+        <text>11111111111111111s</text>
+      </view>
+    </view>
+  </view>
+</view>

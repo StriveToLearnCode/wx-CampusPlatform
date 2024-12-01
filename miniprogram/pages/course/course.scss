@@ -1,1 +1,69 @@
-/* pages/course/course.wxss */
+.container {
+  font-size: 13px;
+  .top {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    .refresh {
+      position: absolute;
+      top: 55px;
+      left: 10px;
+      image {
+        background-color: #fff;
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .van-dropdown-menu {
+      padding: 40px 0 0 0;
+    }
+  }
+  .middle {
+    width: 100%;
+    background-color: #f5f7f8;
+    padding: 5px;
+    display: flex;
+    .month {
+      width: 20px;
+    }
+    .day {
+      display: flex;
+      .day-item {
+        padding: 0 10px;
+        width: 30px;
+        text:nth-child(2) {
+          color: #ccc;
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    .left {
+      display: inline-block;
+      background-color: #f4f6f7;
+      view {
+        padding: 15.45px 6px;
+        color: #ccc;
+      }
+    }
+    .right {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      gap: 3px;
+      .item {
+        grid-row: span 2;
+        display: flex;
+        width: 45px;
+        text-align: center;
+        border: 1px solid #d06969;
+        background-color: #d06969;
+        border-radius: 5px;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
-    "navigationStyle": "custom",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "van-popup": "@vant/weapp/popup/index"
+  "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+  "van-dropdown-item": "@vant/weapp/dropdown-item/index"
   }
 }

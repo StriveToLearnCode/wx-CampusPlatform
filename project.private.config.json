@@ -8,6 +8,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "校历页面",
+          "pathName": "pages/calendar/calendar",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "查成绩页面",
           "pathName": "pages/score/score",
           "query": "",
