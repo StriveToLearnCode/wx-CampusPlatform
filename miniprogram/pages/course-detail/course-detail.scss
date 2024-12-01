@@ -1,1 +1,19 @@
-/* pages/course-detail/course-detail.wxss */
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  .title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f7f7f7;
+  }
+  .content {
+    .item {
+      padding: 10px 0;
+      border-bottom: 1px solid #f7f7f7;
+      text:first-child {
+        margin-right: 20px;
+        color: #5defe5;
+      }
+    }
+  }
+}

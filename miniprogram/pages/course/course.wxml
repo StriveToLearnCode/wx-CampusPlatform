@@ -76,27 +76,11 @@
       </view>
     </view>
     <view class="right">
-      <view class="item">
-        <text>11111111111111111s</text>
-      </view>
-      <view class="item">
-        <text>11111111111111111s</text>
-      </view>
-      <view class="item">
-        <text>11111111111111111s</text>
-      </view>
-      <view class="item">
-        <text>11111111111111111s</text>
-      </view>
-      <view class="item">
-        <text>11111111111111111s</text>
-      </view>
-      <view class="item">
-        <text>11111111111111111s</text>
-      </view>
-      <view class="item">
-        <text>11111111111111111s</text>
-      </view>
+      <navigator url="/pages/course-detail/course-detail">
+        <view class="item">
+          <text>11111111111111111s</text>
+        </view>
+      </navigator>
     </view>
   </view>
 </view>
