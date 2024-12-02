@@ -7,18 +7,22 @@
   <view class="content">
     <view class="user">
       <image src="../../asset/imgs/user.png" mode="aspectFit" />
-      <input type="text" placeholder="请输入学号" />
+      <input model:value="{{stuId}}" type="text" placeholder="请输入学号" />
     </view>
     <view class="password">
       <image src="../../asset/imgs/password.png" mode="aspectFit" />
-      <input type="password" placeholder="请输入密码" />
+      <input
+        model:value="{{password}}"
+        type="password"
+        placeholder="请输入密码"
+      />
     </view>
     <view class="check">
       <checkbox value="{{isChecked}}" />
       <text>记住账号密码(仅本地存储)</text>
     </view>
   </view>
-  <view class="footer">
+  <view class="footer" bindtap="login">
     <text>登录</text>
   </view>
 </view>

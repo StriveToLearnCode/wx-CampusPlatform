@@ -1,46 +1,30 @@
 <view class="cotainer">
   <view class="top">
     <view class="logo">
-      <image src="../../asset/imgs/logo.png" mode="" />
+      <image src="../../asset/imgs/logo.png" mode="aspectFit" />
     </view>
   </view>
   <view class="middle">
     <view class="tools">
       <navigator url="/pages/course/course" open-type="switchTab">
         <view class="check-schedule">
-          <image
-            src="../../asset/imgs/course.png"
-            mode="aspectFit"
-            lazy-load="true"
-          />
+          <image src="../../asset/imgs/course.png" mode="aspectFit" lazy-load="true" />
           <text>查课表</text>
         </view>
       </navigator>
       <navigator url="/pages/score/score">
         <view class="check-schedule">
-          <image
-            src="../../asset/imgs/score.png"
-            mode="aspectFit"
-            lazy-load="true"
-          />
+          <image src="../../asset/imgs/score.png" mode="aspectFit" lazy-load="true" />
           <text>查成绩</text>
         </view>
       </navigator>
       <view class="check-schedule">
-        <image
-          src="../../asset/imgs/attendance.png"
-          mode="aspectFit"
-          lazy-load="true"
-        />
+        <image src="../../asset/imgs/attendance.png" mode="aspectFit" lazy-load="true" />
         <text>查考勤</text>
       </view>
       <navigator url="/pages/calendar/calendar">
         <view class="check-schedule">
-          <image
-            src="../../asset/imgs/calendar.png"
-            mode="aspectFit"
-            lazy-load="true"
-          />
+          <image src="../../asset/imgs/calendar.png" mode="aspectFit" lazy-load="true" />
           <text>校历</text>
         </view>
       </navigator>

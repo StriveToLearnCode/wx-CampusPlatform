@@ -1,38 +1,32 @@
 <view class="container">
   <view class="top">
-    <view class="left">
-      <view>有效成绩</view>
-      <view>原始成绩</view>
+    <view class="left" bind:tap="changeType">
+      <view class="{{isActive ? 'active' : ''}}">有效成绩</view>
+      <view class="{{!isActive ? 'active' : ''}}">原始成绩</view>
     </view>
     <view class="middle">
-      <van-dropdown-menu>
-        <van-dropdown-item value="{{ value }}" options="{{ option }}" />
+      <van-dropdown-menu overlay="true">
+        <van-dropdown-item value="{{ value }}" options="{{ option }}" bind:change="chooseTerm" />
       </van-dropdown-menu>
-    </view>
-    <view class="right">
-      <view class="refresh">
-        <image src="../../asset/imgs/refresh.png" mode="aspectFit" lazy-load="true" />
-      </view>
     </view>
   </view>
   <view class="bottom">
-    <view class="title">2021-2022学年 第一学期</view>
+    <view class="title">{{title}}</view>
     <view class="content">
       <view class="list">
-        <view class="item">
+        <view class="item" wx:for="{{ scoreList }}" wx:key="num">
           <view class="left">
-            <view>语文</view>
+            <view>{{item.name}}</view>
+            <view wx:if="{{isRawScore}}" class="raw-score">
+              <view wx:if="{{item.normalScore}}">平时:{{item.normalScore}}</view>
+              <view class="spel">
+                <view wx:if="{{item.midtermScore}}">期中:{{item.midtermScore}}</view>
+                <view wx:if="{{item.finalScore}}">期末:{{item.finalScore}}</view>
+              </view>
+            </view>
           </view>
-          <view class="right">
-            <view>90</view>
-          </view>
-        </view>
-        <view class="item">
-          <view class="left">
-            <view>语文</view>
-          </view>
-          <view class="right">
-            <view>90</view>
+          <view class="{{item.score < 60 ? 'right gray' : 'right'}}">
+            <view>{{isRawScore ? item.complexScore : item.score}}</view>
           </view>
         </view>
       </view>

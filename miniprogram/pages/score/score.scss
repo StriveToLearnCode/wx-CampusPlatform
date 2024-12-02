@@ -22,9 +22,7 @@
         border-radius: 10px;
       }
       view:first-child {
-        background-color: #e065e0;
         margin-right: 5px;
-        color: #fff;
       }
     }
     .middle {
@@ -69,11 +67,32 @@
           padding: 8px;
           border-bottom: 1px solid #ebeaeb;
           .left {
+            .raw-score {
+              font-size: 10px;
+              color: #9c9c9c;
+              .spel {
+                display: flex;
+                gap: 30px;
+              }
+            }
           }
           .right {
+            color: #e065e0;
           }
         }
       }
     }
+  }
+}
+.active {
+  background-color: #e065e0 !important;
+  color: #fff;
+}
+.gray {
+  color: #9c9c9c;
+}
+.van-dropdown-menu__item {
+  .van-ellipsis {
+    font-size: 12px;
   }
 }

@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/course/course",
     "pages/course-detail/course-detail",
     "pages/mine/mine",
-    "pages/login/login",
     "pages/score/score",
     "pages/calendar/calendar"
   ],

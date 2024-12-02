@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@vant/weapp": "^1.11.7"
+    "@vant/weapp": "^1.11.7",
+    "axios-miniprogram": "^2.7.2"
   }
 }
