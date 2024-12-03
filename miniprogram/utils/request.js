@@ -1,14 +1,33 @@
 import axios from 'axios-miniprogram'
-const token = wx.getStorageSync('cookie')
 const request = axios.create({
   baseURL: 'http://localhost:3000',
   headers: {
-    'Content-Type': 'application/json',
-    token: token ? token : ''
+    'Content-Type': 'application/json'
   }
 })
 // 请求拦截
 request.interceptors.request.use((config) => {
+  const token = wx.getStorageSync('cookie')
+  if (token) {
+    config.headers.token = token
+  } else {
+    wx.showModal({
+      title: '提示',
+      content: '请先登录',
+      complete: (res) => {
+        if (res.cancel) {
+          wx.redirectTo({
+            url: '/pages/login/login'
+          })
+        }
+        if (res.confirm) {
+          wx.redirectTo({
+            url: '/pages/login/login'
+          })
+        }
+      }
+    })
+  }
   return config
 })
 // 响应拦截

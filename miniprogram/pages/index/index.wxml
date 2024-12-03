@@ -8,23 +8,39 @@
     <view class="tools">
       <navigator url="/pages/course/course" open-type="switchTab">
         <view class="check-schedule">
-          <image src="../../asset/imgs/course.png" mode="aspectFit" lazy-load="true" />
+          <image
+            src="../../asset/imgs/course.png"
+            mode="aspectFit"
+            lazy-load="true"
+          />
           <text>查课表</text>
         </view>
       </navigator>
       <navigator url="/pages/score/score">
         <view class="check-schedule">
-          <image src="../../asset/imgs/score.png" mode="aspectFit" lazy-load="true" />
+          <image
+            src="../../asset/imgs/score.png"
+            mode="aspectFit"
+            lazy-load="true"
+          />
           <text>查成绩</text>
         </view>
       </navigator>
       <view class="check-schedule">
-        <image src="../../asset/imgs/attendance.png" mode="aspectFit" lazy-load="true" />
+        <image
+          src="../../asset/imgs/attendance.png"
+          mode="aspectFit"
+          lazy-load="true"
+        />
         <text>查考勤</text>
       </view>
       <navigator url="/pages/calendar/calendar">
         <view class="check-schedule">
-          <image src="../../asset/imgs/calendar.png" mode="aspectFit" lazy-load="true" />
+          <image
+            src="../../asset/imgs/calendar.png"
+            mode="aspectFit"
+            lazy-load="true"
+          />
           <text>校历</text>
         </view>
       </navigator>
@@ -34,40 +50,15 @@
     <view class="content">
       <view class="subTitle">
         <text class="today-class">今日课程</text>
-        <text class="time">15周周一</text>
+        <text class="time">{{weekCount + '周' + weekArr[week - 1]}}</text>
       </view>
       <view class="classes" wx:if="{{classList.length}}">
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
-        </view>
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
-        </view>
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
-        </view>
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
-        </view>
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
-        </view>
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
-        </view>
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
-        </view>
-        <view class="class-content">
-          <text class="now">1-2 网络工程</text>
-          <text class="place">博雅楼503</text>
+        <view class="class-content" wx:for="{{classList}}" wx:key="num">
+          <view class="now">
+            {{item.section + '-' + (item.section + item.sectionCount - 1) + ' '
+            + item.name}}
+          </view>
+          <view class="place">{{item.address}}</view>
         </view>
       </view>
       <view class="empty" wx:else>

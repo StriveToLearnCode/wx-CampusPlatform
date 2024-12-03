@@ -3,84 +3,33 @@
     <view class="refresh">
       <image src="../../asset/imgs/refresh.png" mode="aspectFit" lazy-load="true" />
     </view>
-    <van-dropdown-menu>
-      <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+    <van-dropdown-menu overlay="true">
+      <van-dropdown-item bind:change="onChangeWeek" value="{{ weekCount }}" options="{{ option }}" />
     </van-dropdown-menu>
   </view>
   <view class="middle">
     <view class="month">
-      <text>05月</text>
+      <text>{{month}}月</text>
     </view>
     <view class="day">
-      <view class="day-item">
-        <text>周一</text>
-        <text>29日</text>
-      </view>
-      <view class="day-item">
-        <text>周一</text>
-        <text>29日</text>
-      </view>
-      <view class="day-item">
-        <text>周一</text>
-        <text>29日</text>
-      </view>
-      <view class="day-item">
-        <text>周一</text>
-        <text>29日</text>
-      </view>
-      <view class="day-item">
-        <text>周一</text>
-        <text>29日</text>
-      </view>
-      <view class="day-item">
-        <text>周一</text>
-        <text>29日</text>
-      </view>
-      <view class="day-item">
-        <text>周一</text>
-        <text>29日</text>
+      <view class="day-item" wx:for="{{weeks}}" wx:key="index">
+        <text>周{{chineseNumbers[index]}}</text>
+        <text>{{item}}日</text>
       </view>
     </view>
   </view>
   <view class="bottom">
     <view class="left">
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
-      </view>
-      <view>
-        <text>01</text>
+      <view wx:for="{{totalClassCount}}" wx:key="index">
+        <text>{{item}}</text>
       </view>
     </view>
     <view class="right">
-      <navigator url="/pages/course-detail/course-detail">
-        <view class="item">
-          <text>11111111111111111s</text>
-        </view>
-      </navigator>
+      <view class="item" wx:for="{{ todayWeekClass }}" wx:key="index" style="grid-row: {{(item.section)}} / {{ (item.section)  +  (item.sectionCount)}}; grid-column: {{(item.week)}} / {{(item.week + 1)}}">
+        <navigator url="/pages/course-detail/course-detail">
+          <text>{{item.name}}</text>
+        </navigator>
+      </view>
     </view>
   </view>
 </view>
