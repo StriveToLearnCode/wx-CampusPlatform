@@ -28,7 +28,7 @@ Page({
     optionArr.forEach((item, index) => {
       option.push({
         text: '第' + item + '周',
-        weekCount: index + 1
+        value: index + 1
       })
     })
     // 获取一天最多有多少节课
@@ -52,7 +52,7 @@ Page({
         }
       });
     })
-    console.log(todayWeekClass)
+    wx.setStorageSync('todayWeekClass', todayWeekClass)
     this.setData({
       option, totalClassCount, todayWeekClass
     })

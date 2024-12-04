@@ -9,6 +9,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "课程详情页面",
+          "pathName": "pages/course-detail/course-detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "首页",
           "pathName": "pages/index/index",
           "query": "",

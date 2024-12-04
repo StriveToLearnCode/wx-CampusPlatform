@@ -26,7 +26,7 @@
     </view>
     <view class="right">
       <view class="item" wx:for="{{ todayWeekClass }}" wx:key="index" style="grid-row: {{(item.section)}} / {{ (item.section)  +  (item.sectionCount)}}; grid-column: {{(item.week)}} / {{(item.week + 1)}}">
-        <navigator url="/pages/course-detail/course-detail">
+        <navigator url="/pages/course-detail/course-detail?detail={{item.num}}">
           <text>{{item.name}}</text>
         </navigator>
       </view>

@@ -1,35 +1,35 @@
 <view class="container">
   <view class="title">
-    <text>微信小程序课表实战教程</text>
+    <text>{{thisClass.name}}</text>
   </view>
   <view class="content">
     <view class="item">
       <text>周数</text>
-      <text>1-18周</text>
+      <text>{{thisClass.rawWeeks}}</text>
     </view>
     <view class="item">
       <text>节数</text>
-      <text>1-18周</text>
+      <text>{{thisClass.rawSection}}</text>
     </view>
     <view class="item">
       <text>地点</text>
-      <text>1-18周</text>
+      <text>{{thisClass.address}}</text>
     </view>
     <view class="item">
       <text>老师</text>
-      <text>1-18周</text>
+      <text>{{thisClass.teacher}}</text>
     </view>
     <view class="item">
       <text>学分</text>
-      <text>1-18周</text>
+      <text>{{thisClass.credit}}</text>
     </view>
     <view class="item">
       <text>类型</text>
-      <text>1-18周</text>
+      <text>{{thisClass.category}}</text>
     </view>
     <view class="item">
       <text>考查</text>
-      <text>1-18周</text>
+      <text>{{thisClass.method}}</text>
     </view>
   </view>
 </view>
