@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index"
+  },
+  "navigationBarTitleText": "考勤情况",
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#fcf1fa",
+  "navigationBarBackgroundColor": "#fcf1fa"
+}

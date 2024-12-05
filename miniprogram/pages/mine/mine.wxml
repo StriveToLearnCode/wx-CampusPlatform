@@ -1,2 +1,44 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<!--pages/info/info.wxml-->
+<view class="container">
+  <!-- 顶部展示图 -->
+  <view class="top-show"></view>
+
+  <view class="bottom-show">
+    <!-- 未登录面板 -->
+    <view class="user-container section" bindtap="toLoginPage">
+      <view class="avatar-container">
+        <image src="../../asset/imgs/student.jpg"></image>
+        <view class="no-login">
+          <text class="ellipsis">张三</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 关于售前售后服务面板 -->
+  <view class="after-scale section">
+    <view class="order-title-wrap">
+      <text class="title">个人信息</text>
+    </view>
+    <view class="after-scale-item">
+      <text>学校</text>
+      <text>清华大学</text>
+    </view>
+    <view class="after-scale-item">
+      <text>院系</text>
+      <text>数据科学与计算机学院</text>
+    </view>
+    <view class="after-scale-item">
+      <text>班级</text>
+      <text>24软件3班</text>
+    </view>
+    <view class="after-scale-item">
+      <text>入学年份</text>
+      <text>2024</text>
+    </view>
+    <view class="after-scale-item">
+      <text>学号</text>
+      <text>2024038204</text>
+    </view>
+  </view>
+</view>

@@ -6,7 +6,11 @@
     </view>
     <view class="middle">
       <van-dropdown-menu overlay="true">
-        <van-dropdown-item value="{{ value }}" options="{{ option }}" bind:change="chooseTerm" />
+        <van-dropdown-item
+          value="{{ value }}"
+          options="{{ option }}"
+          bind:change="chooseTerm"
+        />
       </van-dropdown-menu>
     </view>
   </view>
@@ -18,10 +22,16 @@
           <view class="left">
             <view>{{item.name}}</view>
             <view wx:if="{{isRawScore}}" class="raw-score">
-              <view wx:if="{{item.normalScore}}">平时:{{item.normalScore}}</view>
+              <view wx:if="{{item.normalScore}}"
+                >平时:{{item.normalScore}}</view
+              >
               <view class="spel">
-                <view wx:if="{{item.midtermScore}}">期中:{{item.midtermScore}}</view>
-                <view wx:if="{{item.finalScore}}">期末:{{item.finalScore}}</view>
+                <view wx:if="{{item.midtermScore}}"
+                  >期中:{{item.midtermScore}}</view
+                >
+                <view wx:if="{{item.finalScore}}"
+                  >期末:{{item.finalScore}}</view
+                >
               </view>
             </view>
           </view>

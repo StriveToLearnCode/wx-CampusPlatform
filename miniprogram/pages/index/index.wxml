@@ -26,14 +26,16 @@
           <text>查成绩</text>
         </view>
       </navigator>
-      <view class="check-schedule">
-        <image
-          src="../../asset/imgs/attendance.png"
-          mode="aspectFit"
-          lazy-load="true"
-        />
-        <text>查考勤</text>
-      </view>
+      <navigator url="/pages/attendance/attendance">
+        <view class="check-schedule">
+          <image
+            src="../../asset/imgs/attendance.png"
+            mode="aspectFit"
+            lazy-load="true"
+          />
+          <text>查考勤</text>
+        </view>
+      </navigator>
       <navigator url="/pages/calendar/calendar">
         <view class="check-schedule">
           <image

@@ -1,0 +1,50 @@
+.container {
+  background-color: #fcf1fa;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  .top {
+    width: 100%;
+  }
+  .content {
+    padding: 10px;
+    .list {
+      font-size: 14px;
+      .item {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        background-color: #fff;
+        .top-content {
+          display: flex;
+          justify-content: space-between;
+          .week {
+            font-size: 14px;
+          }
+        }
+        .bottom-content {
+          margin-top: 12px;
+          display: flex;
+          justify-content: space-between;
+          .reason {
+            padding: 5px 10px;
+            background-color: #ccc;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.van-dropdown-menu {
+  border-radius: 10px;
+  font-size: 14px;
+  .van-dropdown-item {
+    font-size: 14px; /* 设置下拉项的字体大小 */
+  }
+}

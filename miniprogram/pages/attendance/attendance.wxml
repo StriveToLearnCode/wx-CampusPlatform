@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="top">
+    <van-dropdown-menu overlay="true">
+      <van-dropdown-item
+        value="{{ value }}"
+        options="{{ option }}"
+        bind:change="chooseTerm"
+      />
+    </van-dropdown-menu>
+  </view>
+  <view class="content">
+    <view class="list">
+      <view class="item" wx:for="{{ attendanceList }}" wx:key="index">
+        <view class="top">
+          <view class="top-content">
+            <view class="week"> 第{{ item.week }}周 </view>
+            <view>
+              <view> 老师：{{ item.teacher }} </view>
+              <view> {{ item.section }} </view>
+              <view> 教室：{{ item.classroom }} </view>
+            </view>
+          </view>
+        </view>
+        <view class="bottom">
+          <view class="bottom-content">
+            <view> {{ item.date }} </view>
+            <view class="reason"> {{ item.reason }} </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

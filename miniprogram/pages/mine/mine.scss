@@ -1,1 +1,77 @@
-/* pages/mine/mine.wxss */
+.container {
+  padding: 0rpx !important;
+  height: 100%;
+  width: 100%;
+}
+
+.top-show {
+  width: 100%;
+  height: 300rpx;
+  background-color: #f0faed;
+  background-image: url(../../asset/imgs/school.jpg);
+}
+
+.bottom-show {
+  margin: 0 16rpx;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.1);
+  .section {
+    border-radius: 20rpx;
+    padding: 20rpx;
+  }
+
+  .user-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -86rpx;
+
+    .avatar-container {
+      display: flex;
+      align-items: center;
+
+      image {
+        width: 120rpx;
+        height: 120rpx;
+        border-radius: 50%;
+        margin-right: 20rpx;
+      }
+
+      .no-login {
+        display: flex;
+        flex-direction: column;
+        font-size: 24rpx;
+        text:first-child {
+          font-size: 30rpx;
+        }
+
+        .ellipsis {
+          width: 400rpx;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+.after-scale {
+  padding: 20px;
+  box-sizing: border-box;
+  .order-title-wrap {
+    line-height: 50rpx;
+  }
+
+  .after-scale-item {
+    display: flex;
+    margin: 25px 15px;
+    line-height: 50rpx;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+
+    text {
+      font-size: 25rpx;
+      margin-left: 20rpx;
+    }
+  }
+}

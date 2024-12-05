@@ -6,7 +6,8 @@
     "pages/course-detail/course-detail",
     "pages/mine/mine",
     "pages/score/score",
-    "pages/calendar/calendar"
+    "pages/calendar/calendar",
+    "pages/attendance/attendance"
   ],
   "window": {
     "navigationBarTextStyle": "black",
